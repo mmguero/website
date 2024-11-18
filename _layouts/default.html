@@ -63,6 +63,9 @@
         {% if site.goodreads.id %}
         <p class="view"><i class="fa fa-book" aria-hidden="true"></i> <a rel="me" href="{{ site.goodreads.url }}">{{ site.goodreads.id }} <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
         {% endif %}
+        {% if site.church.label %}
+        <p class="view"><i class="fa fa-heart" aria-hidden="true"></i> <a rel="me" href="{{ site.church.url }}">{{ site.church.label }} <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+        {% endif %}
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>

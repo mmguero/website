@@ -30,6 +30,9 @@ goodreads:
 malcolm:
   label: Malcolm
   url: https://malcolm.fyi
+church:
+  label: Come Unto Christ
+  url: https://www.churchofjesuschrist.org/comeuntochrist
 gpg_key:
   url: https://key.guero.top/seth.d.grover.pub.gpg
 plugins:
