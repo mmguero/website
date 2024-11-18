@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="https://use.fontawesome.com/285a5794ed.js"></script>
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        {% if site.logo %}
+        <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
+        {% else %}
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        {% endif %}
+
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <!--
+        <p class="view"><i class="fa fa-handshake-o" aria-hidden="true"></i> <a href="{{ site.foobar_uri | default: docs | relative_url }}">Some sidebar link</a></p>
+        -->
+
+        {% if site.gpg_key.url %}
+        <p class="view"><i class="fa fa-key" aria-hidden="true"></i> <a href="{{ site.gpg_key.url }}">GPG Key</a></p>
+        {% endif %}
+
+        {% if site.malcolm.label %}
+        <p class="view"><i class="fa fa-eye" aria-hidden="true"></i> <a href="{{ site.malcolm.url }}">{{ site.malcolm.label }}</a></p>
+        {% endif %}
+
+      </header>
+      <section>
+      {{ content }}
+
+      </section>
+      <footer>
+        {% if site.mastodon.id %}
+        <p class="view"><i class="fa fa-share-alt" aria-hidden="true"></i> <a rel="me" href="{{ site.mastodon.url }}">{{ site.mastodon.id }} on Mastodon <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+        {% endif %}
+        {% if site.bluesky.id %}
+        <p class="view"><i class="fa fa-share-alt" aria-hidden="true"></i> <a rel="me" href="{{ site.bluesky.url }}">{{ site.bluesky.id }} on Bluesky <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+        {% endif %}
+        {% if site.github.id %}
+        <p class="view"><i class="fa fa-github" aria-hidden="true"></i> <a rel="me" href="{{ site.github.url }}">{{ site.github.id }} <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+        {% endif %}
+        {% if site.github_gist.id %}
+        <p class="view"><i class="fa fa-clipboard" aria-hidden="true"></i> <a rel="me" href="{{ site.github_gist.url }}">{{ site.github_gist.id }}'s Gists <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+        {% endif %}
+        {% if site.github_dotfiles.id %}
+        <p class="view"><i class="fa-solid fa-toolbox" aria-hidden="true"></i> <a rel="me" href="{{ site.github_dotfiles.url }}">{{ site.github_dotfiles.id }}'s dotfiles <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+        {% endif %}
+        {% if site.reddit.id %}
+        <p class="view"><i class="fa fa-reddit" aria-hidden="true"></i> <a rel="me" href="{{ site.reddit.url }}">{{ site.reddit.id }} <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+        {% endif %}
+        {% if site.goodreads.id %}
+        <p class="view"><i class="fa fa-book" aria-hidden="true"></i> <a rel="me" href="{{ site.goodreads.url }}">{{ site.goodreads.id }} <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+        {% endif %}
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>

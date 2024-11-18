@@ -1,0 +1,48 @@
+repository: mmguero/website
+github:
+  owner_name: mmguero
+  default_branch: main
+title: guero.top
+description: mmguero
+logo: images/sghammock.jpg
+remote_theme: pages-themes/minimal@v0.2.0
+mastodon:
+  id: "@mmguero@infosec.exchange"
+  url: https://infosec.exchange/@mmguero
+bluesky:
+  id: "@guero.top"
+  url: https://bsky.app/profile/guero.top
+reddit:
+  id: u/mmguero
+  url: https://www.reddit.com/user/mmguero/
+github:
+  id: mmguero
+  url: https://github.com/mmguero
+github_gist:
+  id: mmguero
+  url: https://gist.github.com/mmguero
+github_dotfiles:
+  id: mmguero
+  url: https://github.com/mmguero/dotfiles
+goodreads:
+  id: mmguero
+  url: https://www.goodreads.com/mmguero
+malcolm:
+  label: Malcolm
+  url: https://malcolm.fyi
+gpg_key:
+  url: https://key.guero.top/seth.d.grover.pub.gpg
+plugins:
+  - jekyll-relative-links
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+relative_links:
+  enabled: true
+  collections: true
+exclude:
+  - .dockerignore
+  - .envrc
+  - .git
+  - .github
+  - .gitignore
