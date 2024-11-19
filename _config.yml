@@ -2,7 +2,7 @@ repository: mmguero/website
 github:
   owner_name: mmguero
   default_branch: main
-title: guero.top
+title: guero.org
 description: mmguero
 logo: images/sghammock.jpg
 remote_theme: pages-themes/minimal@v0.2.0
@@ -10,8 +10,8 @@ mastodon:
   id: "@mmguero@infosec.exchange"
   url: https://infosec.exchange/@mmguero
 bluesky:
-  id: "@guero.top"
-  url: https://bsky.app/profile/guero.top
+  id: "@guero.org"
+  url: https://bsky.app/profile/guero.org
 reddit:
   id: u/mmguero
   url: https://www.reddit.com/user/mmguero/
@@ -34,7 +34,7 @@ church:
   label: Come Unto Christ
   url: https://www.churchofjesuschrist.org/comeuntochrist
 gpg_key:
-  url: https://key.guero.top/seth.d.grover.pub.gpg
+  url: https://key.guero.org/seth.d.grover.pub.gpg
 plugins:
   - jekyll-relative-links
   - jekyll-remote-theme
